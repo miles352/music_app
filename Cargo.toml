@@ -1,0 +1,27 @@
+[package]
+name = "music_app"
+version = "0.1.0"
+edition = "2021"
+# default-run = "music_app_bin"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+# [[bin]]
+# name = "music_app_bin"
+# path = "src/main.rs"
+
+[dependencies]
+egui = "0.18.0"
+egui_extras = "0.18.0"
+eframe = { version = "0.18.0", features = ["persistence"] }
+serde = { version = "1", features = ["derive"] }
+image = "0.24.2"
+rodio = "0.15.0"
+rfd = "0.8.2"
+rust-embed="6.4.0"
+# id3 = "1.1.2"
+# claxon = "0.4.3"
+lofty = "0.6.3"
+
+[profile.release]
+panic = 'abort'
